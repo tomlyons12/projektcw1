@@ -12,7 +12,7 @@ class Program
         if (double.TryParse(input, out double radius) && radius >= 0)
         {
             double area = Math.PI * radius * radius;
-            Console.WriteLine($"Pole kola o promieniu {radius} wynosi {area:F2}");
+            Console.WriteLine($"Pole koła o promieniu {radius} wynosi {area:F2}");
         }
         else
         {
