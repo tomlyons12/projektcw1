@@ -6,7 +6,7 @@ class Program
         //zadanie 1
         Console.WriteLine("Program do obliczania pola koła");
 
-        Console.Write("Podaj promien: ");
+        Console.Write("Podaj promień: ");
         string input = Console.ReadLine();
 
         if (double.TryParse(input, out double radius) && radius >= 0)
