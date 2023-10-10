@@ -133,13 +133,59 @@ class Program
         }
     }
 
+    static void zad21()
+    {
+        int suma = 0;
+        int ocena;
+        int k = 0;
+        for (int i = 0; i < 5; i++)
+        {
+            Console.Write("Podaj ocenę: ");
+            ocena = Convert.ToInt32(Console.ReadLine());
+            if (ocena > 2)
+            {
+                suma += ocena;
+                k++;
+
+
+            }
+        }
+        if(k>0)
+        {
+            double srednia = suma / k;
+            Console.WriteLine("Śrenia z ocen wynosi: {0:N}", srednia);
+            
+        }
+        else
+        {
+            Console.Write("nie ma ocen pozytywnych");
+        }
+            
+        
+    }
+    static void zad22()
+    {
+        Console.Write("podaj dlugosc lokaty: ");
+        string x = Console.ReadLine();
+        Console.Write("podaj kwote: ");
+        string y = Console.ReadLine();
+        
+        if(double.TryParse(x, out double lata) && double.TryParse(y, out double kwota))
+        {
+            double k;
+
+        }
+    }
+
     static void Main()
     {
-        f1();
-        f2();
-        f3();
-        f4();
-        f5();
+        //f1();
+       // f2();
+        //f3();
+        //f4();
+        //f5();
+
+        zad21();
 
     }
 }
