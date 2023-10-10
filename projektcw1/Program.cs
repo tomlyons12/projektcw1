@@ -127,7 +127,7 @@ class Program
             {
                 double r = -b / (2 * a);
                 double i = Math.Sqrt(-delta) / (2 * a);
-                Console.WriteLine($"miejsca zerowe to: x1={r} + {i} oraz x2={r} - {i}");
+                Console.WriteLine($"miejsca zerowe to: x1={r} + {i:F2}i oraz x2={r} - {i:F2}i");
 
             }
         }
